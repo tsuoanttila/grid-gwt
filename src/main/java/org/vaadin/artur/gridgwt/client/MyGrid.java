@@ -14,7 +14,7 @@ public class MyGrid extends Grid<Person> {
             public String getValue(Person row) {
                 return row.getName();
             }
-        });
+        }).setHidable(true);
 
         // A simple String column for the add-on summary/description
         addColumn(new Column<Integer, Person>("Age") {
@@ -22,7 +22,7 @@ public class MyGrid extends Grid<Person> {
             public Integer getValue(Person row) {
                 return row.getAge();
             }
-        });
+        }).setHidable(true);
 
         // Some dummy data
         ArrayList<Person> addons = new ArrayList<Person>();
